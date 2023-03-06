@@ -73,16 +73,8 @@
 			isa = PBXGroup;
 			children = (
 				28B9AD3829B4F89F00FC78CC /* MyFirstProjectApp.swift */,
-				28B9AD4729B59C8800FC78CC /* View */,
 			);
 			path = Base;
-			sourceTree = "<group>";
-		};
-		28B9AD4729B59C8800FC78CC /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		28B9AD4829B59CE800FC78CC /* View */ = {

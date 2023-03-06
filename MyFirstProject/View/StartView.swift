@@ -14,41 +14,42 @@ struct StartView: View {
              LinearGradient(gradient: Gradient(colors: [.black]), startPoint: .top, endPoint: .bottom)
                  .edgesIgnoringSafeArea(.all)
                 
+//             VStack (alignment: .center, spacing: 0) {
              VStack {
-                 
-                 Text("DELIVEREE")
-                     .font(.largeTitle)
-                     .fontWeight(.black)
-                     .foregroundColor(.white)
- //                    .background(Color.black)
-                    // .background(Color.init()))
-                     .multilineTextAlignment(.center)
-                     .padding()
-                     .background(Image("gamburger2")
-                         .resizable()
-                         .frame(width: 400, height: 580)
-                         
+
+                 VStack(spacing: 0) {
                      
-                     )
+                     Text("DELIVEREE")
+                         .font(.largeTitle)
+                         .fontWeight(.black)
+                         .foregroundColor(Color(hue: 0.0, saturation: 0.088, brightness: 0.913))
+                   //  padding(.bottom, 100)
+                     
+                     //                    .background(Color.black)
+                     // .background(Color.init()))
+                     //.multilineTextAlignment(.center)
+                         .padding()
+                     
+                         .background(Image("gamburger2")
+                            .resizable()
+                            .aspectRatio(contentMode: .fill)
+                            .foregroundColor(Color(red: 1.0, green: 0.0, blue: 0.0, opacity: 0.5))
+                            .frame(width: 400, height: 580)
+                         )
+                     Group{
+                         
+                     }
+                     
+                
                  Text("Your favourite local restaurants delivered to your doorstep.")
                      .font(.body)
                      .foregroundColor(.white)
                      .multilineTextAlignment(.center)
- //                    .background(.black)
-                     
- //                        .aspectRatio(contentMode: .fit)
-                         
- //                Image("gamburger2")
- //                    .resizable()
- //                    .aspectRatio(contentMode: .fit)
-                     //.imageScale(.medium)
-                    // .foregroundColor(.accentColor)
-                
-                 
-             }
-             
+                     }
+                // Spacer()
          }
-         
+         }
+       
         
        //  .padding()
      }

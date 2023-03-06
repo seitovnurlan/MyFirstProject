@@ -12,7 +12,7 @@ struct DetailView: View {
         Text("Hello")
         
         ZStack{
-            LinearGradient(gradient: Gradient(colors: [.black]), startPoint: .top, endPoint: .bottom)
+            LinearGradient(gradient: Gradient(colors: [.black, .white]), startPoint: .top, endPoint: .bottom)
                 .edgesIgnoringSafeArea(.all)
                
             VStack {
@@ -25,12 +25,7 @@ struct DetailView: View {
                    // .background(Color.init()))
                     .multilineTextAlignment(.center)
                     .padding()
-                    .background(Image("gamburger3")
-                        .resizable()
-                        .frame(width: 400, height: 580)
-                        
                     
-                    )
                 Text("Your favourite local restaurants delivered to your doorstep.")
                     .font(.body)
                     .foregroundColor(.white)
@@ -65,10 +60,12 @@ struct ContentView: View {
         
         NavigationView {
             VStack{
-                NavigationLink(destination: DetailView()) {
+//                NavigationLink(destination: DetailView()) {
+                NavigationLink(destination: StartView()) {
                     Text("Show detil view")
-                    StartView()
-                } .navigationBarTitle("Navigation")
+                    DetailView()
+               // } .navigationBarTitle("")
+                } .navigationBarTitle("Navigation", displayMode: .inline)
             }
                     
         }
